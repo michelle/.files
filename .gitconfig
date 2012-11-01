@@ -1,0 +1,20 @@
+[user]
+	name = Michelle Bu
+	email = analogmidnight@gmail.com
+[core]
+	excludesfile = /Users/michelle/.gitignore
+[color]
+	status = auto
+	branch = auto
+	ui = auto
+	diff = auto
+[alias]
+	co = !git checkout
+	c = !git commit -v
+	l = !git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	ll = !git log --graph --color --stat --abbrev-commit --decorate --oneline
+	lll = !git log --graph --color --stat --all --decorate
+	d = !git diff -p --stat --unified=8 --color --color-words='[^[:space:]]|([[:alnum:]]|UTF_8_GUARD)+'
+	di = !git diff -p --stat --unified=8 --color
+	p = !git pull --rebase
+	s = !git status
